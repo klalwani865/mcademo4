@@ -1,3 +1,4 @@
 <?php
-    $connection = new mysqli("localhost","root","","db_aptutorial");
+    $connection = mysqli_connect("localhost","root","","db_aptutorial");
+
 ?>

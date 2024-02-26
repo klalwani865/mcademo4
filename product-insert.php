@@ -46,17 +46,14 @@
                 <tr>
                     <td>Sub Category</td>
                     <td> 
-                        <?php
-                        $subcategoryq = mysqli_query($connection,"select * from tbl_subcategory") or die(mysqli_error($connection));
-                        echo "<select name='sub_category_id'>";
-                        
-                        while($subcatrow = mysqli_fetch_array($subcategoryq))
-                        {
-                            echo "<option value='{$subcatrow['sub_category_id ']}'>{$subcatrow['sub_category_name']}<option/>";
-                        }
-                        echo "</select>";
-                        ?>
+                        <select name="Category">
+                            <option>SmartMobile</option>
+                            <option>Leptop</option>
+                            <option>PowerBank</option>
+                            <option>SmartTV</option>
+                        </select>
                     </td>
+                    
                 </tr>
                 <tr>
                     <td>Qty</td>
